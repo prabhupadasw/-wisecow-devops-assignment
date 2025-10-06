@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: YOUR_DOCKERHUB_USERNAME/wisecow:latest
+          tags: prabhupadaswain/wisecow:latest
