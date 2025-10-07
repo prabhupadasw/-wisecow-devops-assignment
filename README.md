@@ -89,3 +89,27 @@ Logs all alerts with timestamps to health_alerts.log (in the same folder).
 
 Sample alert (in health_alerts.log):
 Tue Oct  7 22:37:14 2025: Memory usage high!
+
+##(ii)Application Health Checker (app_health_checker.py)
+
+A Python script that checks whether web applications are "UP" (HTTP 200) or "DOWN" (other status code or error) and logs the results.
+Install required package:
+pip install requests
+
+Run the script:
+python app_health_checker.py
+
+Check app_health.log for timestamped uptime/downtime status.
+https://wisecow.local is DOWN (error: certificate verify failed...)
+https://google.com is UP (status: 200)
+https://github.com is UP (status: 200)
+Results are also saved to app_health.log in the same folder.
+
+After adding, commit and push:
+git add README.md
+git commit -m "Update README: add application health checker instructions"
+git push origin main
+
+
+
+
