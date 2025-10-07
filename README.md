@@ -57,3 +57,35 @@ GitHub Actions automatically builds and pushes Docker images to Docker Hub on ev
 
 ## Author
 Prabhupada Swain - DevOps Trainee Assessment
+
+
+
+
+
+
+
+
+## Problem Statement 2: 
+
+ps2-devops-scripts/README.md
+System Health Monitoring Script (health_monitor.py)
+Description:
+A Python script that continuously monitors CPU usage, memory usage, disk space, and running process count on a Linux/Windows system.
+
+If CPU > 80%, Memory > 80%, or Disk > 90%, it prints an alert and logs it to health_alerts.log.
+
+Runs checks every 10 seconds (configurable).
+Install dependencies:
+pip install psutil
+Run the script:
+python health_monitor.py
+Stop: Press Ctrl+C to stop monitoring.
+
+Output:
+
+Shows system stats in your terminal.
+
+Logs all alerts with timestamps to health_alerts.log (in the same folder).
+
+Sample alert (in health_alerts.log):
+Tue Oct  7 22:37:14 2025: Memory usage high!
