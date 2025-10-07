@@ -1,0 +1,15 @@
+apiVersion: security.kubearmor.com/v1
+kind: KubeArmorPolicy
+metadata:
+  name: deny-all-files
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: wisecow-deployment
+  file:
+    matchDirectories:
+    - dir: /
+      recursive: true
+  action: Block
+
