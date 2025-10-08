@@ -11,5 +11,3 @@ spec:
     matchPaths:
     - path: /tmp/forbidden.txt
   action: Block
-
-
